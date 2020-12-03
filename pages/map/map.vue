@@ -10,7 +10,7 @@
             </view>
         </view>
         <view @tap="toAddress">
-            到这去吧
+            到这去吧?
         </view>
     </view>
 </template>
