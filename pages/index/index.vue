@@ -1,8 +1,5 @@
 <template>
     <view class="container">
-
-        <view :class="{ active: isActive }">111</view>
-        <view class="static" :class="{activeClass, errorClass}">333</view>
         <!-- <picker mode="date" :value="picker_date" start="2015-09-01" end="2017-10-01" @change="bindDateChange">
             <view class="picker">
                 当前选择: {{ picker_date }}
