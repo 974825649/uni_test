@@ -16,14 +16,6 @@
 
         </view>
 
-        <view class="">
-            <view class="">
-                第一次提交 111111
-                第二次提交 111111
-                第三次提交 111111
-            </view>
-        </view>
-
         <!-- <view>
             <block class="" v-for="(item,index) in apple" :key="index">
                 <view v-if="index < 2">
