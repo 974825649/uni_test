@@ -1,13 +1,9 @@
 <template>
     <view class="container">
-        <!-- <picker mode="date" :value="picker_date" start="2015-09-01" end="2017-10-01" @change="bindDateChange">
-            <view class="picker">
-                当前选择: {{ picker_date }}
-            </view>
-        </picker> -->
+
        
         <view class="btnWrap">
-
+            
             <button type="primary" class="btn" @click="jump(url.test)"> 测试代码 </button>
             <button type="primary" class="btn" @click="modal"> 测试弹窗 </button>
             <button type="primary" class="btn" @click="jump(url.text)"> 测试 text </button>
@@ -16,20 +12,6 @@
 
         </view>
 
-        <!-- <view>
-            <block class="" v-for="(item,index) in apple" :key="index">
-                <view v-if="index < 2">
-                    <view style="color: blue"> 
-                        <text >{{ item.appleName }} </text>
-                    </view>
-                </view>
-                <view v-else>
-                    <view style="color: red"> 
-                        <text >{{ item.appleName }} </text>
-                    </view>     
-                </view>
-            </block>
-        </view>       -->
     </view>
 </template>
 
@@ -68,10 +50,6 @@ export default {
         };
     },
     methods: {
-		// bindDateChange(e){
-		// 	console.log(e);
-        //     this.picker_date = e.detail.value                         
-        // },
         modal() {
             uni.showModal({
                 title: '提示',
