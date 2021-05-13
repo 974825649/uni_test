@@ -9,6 +9,7 @@
             <button type="primary" class="btn" @click="jump(url.text)"> 测试 text </button>
             <button type="primary" class="btn" @click="jump(url.watch)"> 测试 watch </button>
             <button type="primary" class="btn" @click="jump(url.map)"> 测试 map </button>
+            <button type="primary" class="btn" @click="jump(url.newpage)"> 测试 新页面 </button>
 
         </view>
 
@@ -31,6 +32,7 @@ export default {
                 watch: `/pages/watch/watch`,
                 test: `/pages/test/test`,
                 map: `/pages/map/map`,
+                newpage: `/pages/newpage/newpage`,
 			},
             apple: [
                 {

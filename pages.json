@@ -19,6 +19,10 @@
 		{
 			"path": "pages/map/map",
 			"style": { "navigationBarTitleText": "测试map" }
+		},
+		{
+			"path": "pages/newpage/newpage",
+			"style": { "navigationBarTitleText": "测试newpage" }
 		}
 	],
 	"globalStyle": {
