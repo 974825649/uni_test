@@ -1,11 +1,11 @@
 <template>
     <button :class="'i-button-size' + size" :disabled="disabled" class="btn" @click="handleClick">
         <text class="float-left">
-            <slot name="slot-left">左边默认数据</slot>
+            <slot name="slot-left"></slot>
         </text>
         <slot></slot>
         <text class="float-right">
-            <slot name="slot-right">默认数据</slot>
+            <slot name="slot-right"></slot>
         </text>
     </button>
 </template>
@@ -35,22 +35,25 @@ export default {
     },
     methods: {
         handleClick(event) {
-            console.log('子组件方法');
-            this.$emit('btnclick', {'title': 'hehe'});
-        }
+            console.log("子组件方法");
+            this.$emit("btnclick", { title: "hehe" });
+        },
+        sayHello() {
+            window.alert("Hello");
+        },
     },
 };
 </script>
 
 <style lang="scss" scoped>
-    .btn{
-        display: flex;
-        justify-content: space-between;
-    }
-    .btn .float-left{
-        color: blue;
-    }
-    .btn .float-right{
-        color: red;
-    }
+.btn {
+    display: flex;
+    justify-content: space-between;
+}
+.btn .float-left {
+    color: blue;
+}
+.btn .float-right {
+    color: red;
+}
 </style>

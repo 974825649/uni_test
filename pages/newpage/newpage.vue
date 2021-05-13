@@ -14,6 +14,10 @@
         <i-button @click.native="btnclick">
             按钮2
         </i-button>
+
+        <i-button @click.native="handleref" ref="comBtn">
+            按钮3
+        </i-button>
     </view>
 </template>
 
@@ -25,6 +29,9 @@ export default {
     methods: {
         btnclick(val){
             console.log('父组件value',val);
+        },
+        handleref(){
+            this.$refs.comBtn.sayHello();
         }
     },
 };
