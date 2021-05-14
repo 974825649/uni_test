@@ -11,28 +11,35 @@
             </template>
         </i-button>
 
-        <i-button @click.native="btnclick">
+        <i-button @click.native="btnclick" ref="comBtn">
             按钮2
         </i-button>
 
-        <i-button @click.native="handleref" ref="comBtn">
-            按钮3
-        </i-button>
+        <injectButton>
+            inject-Button
+        </injectButton>
     </view>
 </template>
 
 <script>
 import iButton from "./i-button";
+import injectButton from "./inject-button";
 export default {
     name: "ibutton",
-    components: { iButton },
+    components: {
+        iButton,
+        injectButton,
+    },
+    provide: {
+        name: "Aresn",
+    },
     methods: {
-        btnclick(val){
-            console.log('父组件value',val);
+        btnclick(val) {
+            console.log("父组件value", val);
         },
-        handleref(){
+        handleref() {
             this.$refs.comBtn.sayHello();
-        }
+        },
     },
 };
 </script>
