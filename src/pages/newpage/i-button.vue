@@ -49,11 +49,12 @@ export default {
 .btn {
     display: flex;
     justify-content: space-between;
-}
-.btn .float-left {
-    color: blue;
-}
-.btn .float-right {
-    color: red;
+
+    .float-left {
+        color: blue;
+    }
+    .float-right {
+        color: red;
+    }
 }
 </style>
