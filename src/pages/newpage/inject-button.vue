@@ -10,8 +10,9 @@ export default {
     methods: {
         handleClick() {
             console.log('触发inject-button');
-
             console.log(this.name);
+
+            // this.$fn.findComponentUpward()
         }
     },
 };

@@ -49,7 +49,6 @@ export default {
 .btn {
     display: flex;
     justify-content: space-between;
-
     .float-left {
         color: blue;
     }

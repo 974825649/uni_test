@@ -11,9 +11,9 @@
             </template>
         </i-button>
 
-        <i-button @click.native="btnclick" ref="comBtn">
-            按钮2
-        </i-button>
+        <i-button @click.native="btnclick" ref="comBtn">按钮2</i-button>
+
+        <button @click="handleref">触发按钮2 组件里方法</button>
 
         <injectButton>
             inject-Button
@@ -34,6 +34,7 @@ export default {
         name: "Aresn",
     },
     methods: {
+        //按钮2方法
         btnclick(val) {
             console.log("父组件value", val);
         },
